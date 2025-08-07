@@ -1,0 +1,32 @@
+import { hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
+import ClientProviders from '@/components/ClientProviders';
+ 
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  const { locale } = params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
+  return (
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <body>
+        <ClientProviders locale={locale} messages={messages}>
+          {children}
+        </ClientProviders>
+      </body>
+    </html>
+  );
+}
+

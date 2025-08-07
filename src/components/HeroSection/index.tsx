@@ -1,8 +1,10 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import CustomButton from "../ui/Button";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
+  const t = useTranslations();
   return (
     <Box
       sx={{
@@ -43,13 +45,10 @@ const HeroSection = () => {
             }}
           >
             <Typography variant="h4" fontWeight={500} padding="0">
-              Welcome to Chocolate Shop
+              {t("Welcome_Chocolate_Shop")}
             </Typography>
 
-            <Typography variant="body1">
-              Explore our carefully selected collection of the finest
-              chocolates.
-            </Typography>
+            <Typography variant="body1">{t("Explore_chocolates")}</Typography>
 
             <Box
               sx={{
@@ -61,8 +60,8 @@ const HeroSection = () => {
                 },
               }}
             >
-              <CustomButton content={"Shop Now"} />
-              <CustomButton content={"View Deals"} color="secondary" />
+              <CustomButton content={t("shop_now")} />
+              <CustomButton content={t("View_Deals")} color="secondary" />
             </Box>
           </Grid>
           <Grid
