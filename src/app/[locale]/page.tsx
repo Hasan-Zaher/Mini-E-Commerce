@@ -1,17 +1,16 @@
-import Image from "next/image";
  
-import Navbar from "@/components/NavBar";
-import HeroSection from "@/components/HeroSection";
-import { useTranslations } from "next-intl";
-import WhyUs from "@/components/WhyUs";
 
-export default function Home() {
-  const t = useTranslations();
+ 
+
+import { HomePage } from "@/pages";
+
+const Home = () => {
+ 
   return (
     <main>
-      <Navbar />
-      <HeroSection />
-      <WhyUs/>
+      <HomePage />
     </main>
   );
-}
+};
+
+export default Home;

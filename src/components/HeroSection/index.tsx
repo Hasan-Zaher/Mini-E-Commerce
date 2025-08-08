@@ -44,7 +44,7 @@ const HeroSection = () => {
               },
             }}
           >
-            <Typography variant="h4" fontWeight={500} padding="0">
+            <Typography variant="h4"  fontWeight={500} padding="0">
               {t("Welcome_Chocolate_Shop")}
             </Typography>
 

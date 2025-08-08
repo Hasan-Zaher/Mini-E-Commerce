@@ -1,7 +1,8 @@
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import ClientProviders from '@/components/ClientProviders';
+import ClientProviders from '@/app/ClientProviders';
+import Navbar from '@/components/NavBar';
  
 
 export default async function LocaleLayout({
@@ -23,6 +24,7 @@ export default async function LocaleLayout({
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body>
         <ClientProviders locale={locale} messages={messages}>
+          <Navbar/>
           {children}
         </ClientProviders>
       </body>
