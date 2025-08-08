@@ -11,7 +11,7 @@ type Props = {
   messages: any;
 };
 
-export default function ClientProviders({ children, locale, messages }: Props) {
+ const ClientProviders = ({ children, locale, messages }: Props)  => {
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <ThemeProvider theme={theme}  >
@@ -23,3 +23,5 @@ export default function ClientProviders({ children, locale, messages }: Props) {
     </NextIntlClientProvider>
   );
 }
+
+export default ClientProviders

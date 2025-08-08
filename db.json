@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title":{
+        "ar":"الشوكولاتة الداكنة",
+        "en":"Dark Chocolate"
+      },
+      "description": {
+        "ar":"لوح شوكولاتة داكنة من الكاكاو بنسبة ٧٠٪، بنكهة التوت الأحمر ولمسة من الفانيليا. مصنوع يدويًا في بلجيكا باستخدام الطرق التقليدية.",
+        "en":"70% cacao dark chocolate bar with notes of red berries and a hint of vanilla. Handcrafted in Belgium using traditional methods."
+      },
+      "price": 8.99,
+      "stock":3,
+      "image": "/images/productOne.jpg",
+      "origin": "Belgium"
+
+    },
+    {
+      "id": 2,
+      "title": {
+        "ar":"  شوكولاتة الحليب",
+        "en":"Milk Chocolate"
+      },
+      "description":{
+        "ar":"ترافل شوكولاتة الحليب الفاخرة، بحشوة غاناش مخملية، ومغطاة بمسحوق الكاكاو الفاخر. مثالية كهدية أو تسلية شخصية.",
+        "en":"Luxurious milk chocolate truffles with a velvety ganache center, dusted with premium cocoa powder. Perfect as a gift or personal indulgence."
+      },
+      "price": 24.99,
+      "stock":2,
+      "image": "/images/productTwo.jpg",
+      "origin": "Switzerland"
+    },
+    {
+      "id": 3,
+      "title": {
+        "ar":"الشوكولاتة البيضاء",
+        "en":"White Chocolate"
+      },
+      "description":{
+        "ar":"شوكولاتة بيضاء كريمية ممزوجة بالفستق المحمص ورقائق ملح البحر الرقيقة. مزيج مثالي من النكهات الحلوة والمالحة.",
+        "en":"Creamy white chocolate blended with roasted pistachios and delicate sea salt flakes. A perfect balance of sweet and savory flavors."
+      },
+      "price": 12.99,
+      "stock":7,
+      "image": "/images/productThree.jpg",
+      "origin": "Italy"
+
+    },
+    {
+      "id": 4,
+      "title": {
+        "ar":"الشوكولاتة المكسيكية الحارة",
+        "en":"Spicy Mexican Chocolate "
+      },
+      "description": {
+        "ar":"شوكولاتة ساخنة على الطريقة المكسيكية الأصيلة مع القرفة والفلفل الحار وجوزة الطيب. أضف الحليب الساخن لمشروب دافئ وعطري.",
+        "en":"Authentic Mexican-style hot chocolate with cinnamon, chili, and nutmeg. Just add hot milk for a warming, aromatic beverage."
+      },
+      "price": 15.99,
+      "stock":5,
+      "image": "/images/productFour.jpg",
+      "origin": "Mexico"
+    }
+     
+  ]
+}
