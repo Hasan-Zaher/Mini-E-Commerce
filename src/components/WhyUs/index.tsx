@@ -1,5 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import CustomButton from "../ui/Button";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { FaHeadset, FaLeaf, FaLock, FaShippingFast } from "react-icons/fa";
 
@@ -31,7 +30,7 @@ const WhyUs = () => {
 
   return (
     <Box
-      py={6}
+      py={8}
       sx={{
         backgroundColor: "#f9f9f9",
         justifyContent: "center",
